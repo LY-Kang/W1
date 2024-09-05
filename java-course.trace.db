@@ -1,0 +1,27 @@
+2024-09-05 15:24:32.853403+08:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "EMPLOYEE" not found (this database is empty); SQL statement:
+SELECT EMP_ID, NAME, BIRTH_DATE, SEX, SALARY, BRANCH_ID, SUP_ID FROM PUBLIC.EMPLOYEE [42104-232]
+2024-09-05 15:24:48.899673+08:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "EMPLOYEE" not found (this database is empty); SQL statement:
+SELECT EMP_ID, NAME, BIRTH_DATE, SEX, SALARY, BRANCH_ID, SUP_ID FROM PUBLIC.EMPLOYEE [42104-232]
+2024-09-05 15:25:48.768785+08:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "NEWTABLE" not found (this database is empty); SQL statement:
+SELECT EMP_ID, NAME, BIRTH_DATE, SEX, SALARY, BRANCH_ID, SUP_ID FROM PUBLIC.NEWTABLE [42104-232]
+2024-09-05 15:27:32.634127+08:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "NEWTABLE" not found (this database is empty); SQL statement:
+SELECT * FROM PUBLIC.NEWTABLE [42104-232]
+2024-09-05 15:27:46.436298+08:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "NEWTABLE" not found (this database is empty); SQL statement:
+SELECT EMP_ID, NAME, BIRTH_DATE, SEX, SALARY, BRANCH_ID, SUP_ID FROM NEWTABLE [42104-232]
+2024-09-05 15:27:55.831773+08:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "NEWTABLE" not found (this database is empty); SQL statement:
+SELECT EMP_ID, NAME, BIRTH_DATE, SEX, SALARY, BRANCH_ID, SUP_ID FROM NEWTABLE; [42104-232]
+2024-09-05 15:35:47.072683+08:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "EMP_ID" not found [42122-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
+	at org.h2.jdbc.JdbcResultSet.getInt(JdbcResultSet.java:337)
+	at connect_to_H2.main(connect_to_H2.java:34)
